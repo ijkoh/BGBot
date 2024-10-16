@@ -1,0 +1,10 @@
+services:
+  bg_bot:
+    image: registry.smprojects.ru/tools/hr-bot:${BUILD_VERSION:-latest}
+    build:
+      args:
+        PYTHON_VERSION: "3.12"
+        ALPINE_VERSION: "3.20"
+        BGBOT_GITHUB_URL: "https://github.com/SashaMKB/BGBot.git"
+      context: ../../
+      dockerfile: docker/build/Dockerfile
