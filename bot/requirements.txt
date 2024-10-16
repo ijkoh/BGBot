@@ -1,4 +1,0 @@
-schedule
-aiogram
-pyTelegramBotAPI
-python-dotenv
