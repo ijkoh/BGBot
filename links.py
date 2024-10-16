@@ -3,12 +3,12 @@ from aiogram.utils.markdown import hlink
 hello_url = hlink("Привет, я твой личный помошник", "https://youtu.be/dQw4w9WgXcQ")
 
 # newpcomers
-dev_url = hlink("Страничка новичка - разработчика БАРС Груп",
+dev_url = hlink("1Страничка новичка - разработчика БАРС Груп",
                 "https://conf.bars.group/pages/viewpage.action?pageId=183236087")
-an_url = hlink("Страничка новичка - аналитка БАРС Груп",
+an_url = hlink("2Страничка новичка - аналитка БАРС Груп",
                "https://conf.bars.group/pages/viewpage.action?pageId=198277483")
-newpie_utl = hlink("Страничка новичка БАРС Груп", "https://conf.bars.group/pages/viewpage.action?pageId=121640225")
-newjkx_url = hlink("Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
+newpie_utl = hlink("3Страничка новичка БАРС Груп", "https://conf.bars.group/pages/viewpage.action?pageId=121640225")
+newjkx_url = hlink("4Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
 
 templates_url = hlink("ссылке", "https://conf.bars.group/pages/viewpage.action?pageId=56479927")
 references_url = hlink("ссылке", "https://jira.bars.group/servicedesk/customer/portal/13/group/101")
