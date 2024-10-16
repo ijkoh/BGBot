@@ -214,8 +214,8 @@ def main(message):
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Для разработчика"
         btn2 = "Для аналитика"
-        btn3 = "5Страничка новичка БАРС Груп"
-        btn4 = "6Страничка новичка БЦ ЖКХ,СЗ и СТРК"
+        btn3 = "Страничка новичка БАРС Груп"
+        btn4 = "Страничка новичка БЦ ЖКХ,СЗ и СТРК"
         btn5 = "Вернуться в главное меню ↩"
         reply_markup.add(btn1, btn2, btn3, btn4, btn5)
         bot.send_message(message.chat.id,
@@ -227,9 +227,9 @@ def main(message):
         bot.send_message(message.chat.id, f"{dev_url}", parse_mode="HTML", timeout=60)
     if message.text == "Для аналитика":
         bot.send_message(message.chat.id, f"{an_url}", parse_mode='HTML', timeout=60)
-    if message.text == "7Страничка новичка БАРС Груп":
+    if message.text == "Страничка новичка БАРС Груп":
         bot.send_message(message.chat.id, f"{newpie_utl}", parse_mode='HTML', timeout=60)
-    if message.text == "8Страничка новичка БЦ ЖКХ,СЗ и СТРК":
+    if message.text == "Страничка новичка БЦ ЖКХ,СЗ и СТРК":
         bot.send_message(message.chat.id, f'{newjkx_url}', parse_mode="HTML", timeout=60)
 
     if message.text == "Плюшки":
