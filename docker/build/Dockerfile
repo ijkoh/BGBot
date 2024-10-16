@@ -7,7 +7,7 @@ FROM python:3.12-alpine
 
 ARG BGBOT_GITHUB_URL
 RUN apk add --no-cache git \
-    && git clone https://github.com/smartpetrol/ct-company-python-bot/tree/sigora/2371_adaptation.git
+    && git clone https://github.com/ijkoh/hr_bot.git
 
 WORKDIR /BGBot
 RUN pip3 install -r requirements.txt
