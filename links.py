@@ -3,7 +3,7 @@ from aiogram.utils.markdown import hlink
 hello_url = hlink("Привет, я твой личный помошник", "https://youtu.be/dQw4w9WgXcQ")
 
 # newpcomers
-dev_url = hlink("1Страничка новичка - разработчика БАРС Груп",
+dev_url = hlink("Страничка новичка - разработчика БАРС Груп",
                 "https://conf.bars.group/pages/viewpage.action?pageId=183236087")
 an_url = hlink("Страничка новичка - аналитка БАРС Груп",
                "https://conf.bars.group/pages/viewpage.action?pageId=198277483")
