@@ -5,8 +5,10 @@ from aiogram.utils.markdown import hlink
 # Страничка новичка 
 dev_url = hlink("Страничка новичка - разработчика БАРС Груп",
                 "https://conf.bars.group/pages/viewpage.action?pageId=183236087")
-an_url = hlink("ссылка на битрикс - страницу по направлению")
-newpie_utl = hlink("ссылка на битрикс - страницу по направлению")
+an_url = hlink("ссылка на битрикс - страницу по направлению",
+              "https://bx.crg.im/stream/")
+newpie_utl = hlink("ссылка на битрикс - страницу по направлению",
+                  "https://bx.crg.im/stream/")
 newjkx_url = hlink("Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
 
 templates_url = hlink("ссылке", "https://conf.bars.group/pages/viewpage.action?pageId=56479927")
