@@ -143,7 +143,7 @@ schedule.every().day.at("10:30").do(check_dates)
 def main(message):
     if message.text == "Вернуться в главное меню ↩":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = "Страница новичка🧑‍💻"
+        btn1 = "тест Страница новичка🧑‍💻"
         btn2 = "Документы"
         btn3 = "Отпуск/Больничный/Отгул"
         btn4 = "Плюшки"
