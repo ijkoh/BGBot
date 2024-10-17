@@ -42,9 +42,8 @@ def start(message):
     btn6 = "Идеи"
     reply_markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
     bot.send_message(message.chat.id,
-                     "Привет-привет!\nМеня зовут БОТ CARGO.RUN\nРад приветствовать тебя.\nЯ помогу тебе найти ответы на твои вопросы. "
-                     "\nЧто тебя интересует?", reply_markup=reply_markup, timeout=60)
-
+                     "Привет-привет!\nМеня зовут Макси\nРад приветствовать тебя.\nЯ помогу тебе найти "
+                     "ответы на твои вопросы.\nЧто тебя интересует?", reply_markup=reply_markup, timeout=60)
 
 
 @bot.message_handler(commands=['instruction'])
@@ -152,24 +151,6 @@ def main(message):
         btn6 = "Идеи"
         reply_markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
         bot.send_message(message.chat.id, text="Что Вы хотите узнать?", reply_markup=reply_markup, timeout=60)
-
-
-   if message.text == "Страница новичка🧑‍💻":
-        reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = "Страничка новичка"
-        btn2 = "Страничка нового аналитика"
-        btn3 = "Страничка нового разработчика"
-        btn4 = "Вернуться в главное меню ↩"
-        reply_markup.add(btn1, btn2, btn3, btn4)
-        bot.send_message(message.chat.id,
-                         "Здесь собрана вся информация, которая будет полезна для новичка.\nЕсли останутся вопросы, "
-                         "можешь обратиться к наставнику/рукводителю/HR",
-                         reply_markup=reply_markup, timeout=60)
-    if message.text == "Страничка нового аналитика":
-        bot.send_message(message.chat.id, f"{an_url}", parse_mode='HTML', timeout=60)
-    if message.text == "Страничка нового разработчика":
-        bot.send_message(message.chat.id, f"{newpie_utl}", parse_mode='HTML', timeout=60)
-
     if message.text == "Документы":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Шаблоны"
@@ -229,6 +210,28 @@ def main(message):
     if message.text == "Отгул":
         bot.send_message(message.chat.id, f"Пока что тут пусто...", timeout=60)
 
+    if message.text == "Страница новичка🧑‍💻":
+        reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = "Для разработчика"
+        btn2 = "Для аналитика"
+        btn3 = "Страничка новичка БАРС Груп"
+        btn4 = "Страничка новичка БЦ ЖКХ,СЗ и СТРК"
+        btn5 = "Вернуться в главное меню ↩"
+        reply_markup.add(btn1, btn2, btn3, btn4, btn5)
+        bot.send_message(message.chat.id,
+                         "Здесь собрана вся информация, которая будет полезна для новичка.\nЕсли останутся вопросы, "
+                         "можешь обратиться к наставнику/рукводителю/HR",
+                         reply_markup=reply_markup, timeout=60)
+    # нужно ли добавить страничку новичка БЦ ЖКХ --?
+    if message.text == "Для разработчика":
+        bot.send_message(message.chat.id, f"{dev_url}", parse_mode="HTML", timeout=60)
+    if message.text == "Для аналитика":
+        bot.send_message(message.chat.id, f"{an_url}", parse_mode='HTML', timeout=60)
+    if message.text == "Страничка новичка БАРС Груп":
+        bot.send_message(message.chat.id, f"{newpie_utl}", parse_mode='HTML', timeout=60)
+    if message.text == "Страничка новичка БЦ ЖКХ,СЗ и СТРК":
+        bot.send_message(message.chat.id, f'{newjkx_url}', parse_mode="HTML", timeout=60)
+
     if message.text == "Плюшки":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "ДМС"
@@ -251,8 +254,6 @@ def main(message):
         bot.send_message(message.chat.id,
                          f"Большая коллекция профессиональной литературы в одном {biblio_url}.Если не нашел нужную тебе книгу-напиши @pashkooova_sasha.",
                          parse_mode="HTML", timeout=60)
-
-
     if message.text == "Службы":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Бухгалтерия"
