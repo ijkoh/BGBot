@@ -198,18 +198,15 @@ def main(message):
         bot.send_message(message.chat.id, "Оформи отпуск/больничный/отгул правильно, чтоб тебя не беспокоили в эти дни",
                          reply_markup=reply_markup, timeout=60)
     if message.text == "Отпуск 🏖":
+        logging.info('Hello niggas')
         bot.send_message(message.chat.id,
                          f'Уйти в {vacation_url} так, чтоб тебя потом  "не дергали" с оформленем документов - это талант) И мы тебя этому научим',
                          parse_mode='HTML', timeout=60)
     if message.text == "Больничный":
-        bot.send_message(message.chat.id, f"Если есть необходимость взять больничный, то загляни {sickleave_url}",
+        bot.send_message(message.chat.id, f"Если есть необходимость взять {sickleave_url}, то загляни сюда",
                          parse_mode='HTML', timeout=60)
     if message.text == "Отгул":
         bot.send_message(message.chat.id, f"Пока что тут пусто...", timeout=60)
-
-#    if message.text == "Отгул":
-#        bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям",
-#                         parse_mode='HTML', timeout=60)
 
 
     if message.text == "Плюшки":
