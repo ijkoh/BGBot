@@ -205,8 +205,8 @@ def main(message):
     if message.text == "Больничный":
         bot.send_message(message.chat.id, f"Если есть необходимость взять больничный, то загляни {sickleave_url}",
                          parse_mode='HTML', timeout=60)
-    if message.text == "Отгул":
-        bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям", timeout=60)
+#    if message.text == "Отгул":
+#        bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям", timeout=60)
 
 
     if message.text == "Плюшки":
