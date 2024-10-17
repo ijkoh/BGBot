@@ -15,8 +15,8 @@ references_url = hlink("ссылке", "https://bx.crg.im/stream/")
 
 
 ## Отпуск/Больничный/Отгул
-vacation_url = hlink("отпуск", "https://bx.crg.im/stream/")
 sickleave_url = hlink("больничный", "https://bx.crg.im/stream/")
+vacation_url = hlink("отпуск", "https://bx.crg.im/stream/")
 #otgyl_url = hlink("больничный", "https://bx.crg.im/stream/")
 
 # bonus
