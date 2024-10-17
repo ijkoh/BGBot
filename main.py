@@ -42,7 +42,7 @@ def start(message):
     btn6 = "Идеи"
     reply_markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
     bot.send_message(message.chat.id,
-                     "Привет-привет!\nМеня зовут Макси\nРад приветствовать тебя.\nЯ помогу тебе найти "
+                     "Привет-пока!\nМеня зовут Макси\nРад приветствовать тебя.\nЯ помогу тебе найти "
                      "ответы на твои вопросы.\nЧто тебя интересует?", reply_markup=reply_markup, timeout=60)
 
 
