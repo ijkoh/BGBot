@@ -192,9 +192,9 @@ def main(message):
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Отпуск 🏖"
         btn2 = "Больничный"
-#        btn3 = "Отгул"
-        btn3 = "Вернуться в главное меню ↩"
-        reply_markup.add(btn1, btn2, btn3)
+        btn3 = "Отгул"
+        btn4 = "Вернуться в главное меню ↩"
+        reply_markup.add(btn1, btn2, btn3, btn4)
         bot.send_message(message.chat.id, "Оформи отпуск/больничный/отгул правильно, чтоб тебя не беспокоили в эти дни",
                          reply_markup=reply_markup, timeout=60)
     if message.text == "Отпуск 🏖":sh
@@ -204,9 +204,12 @@ def main(message):
     if message.text == "Больничный":
         bot.send_message(message.chat.id, f"Если есть необходимость взять больничный, то загляни {sickleave_url}",
                          parse_mode='HTML', timeout=60)
-    #if message.text == "Отгул":
-    #    bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям",
-    #                     parse_mode='HTML', timeout=60)
+    if message.text == "Отгул":
+        bot.send_message(message.chat.id, f"Пока что тут пусто...", timeout=60)
+
+#    if message.text == "Отгул":
+#        bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям",
+#                         parse_mode='HTML', timeout=60)
 
 
     if message.text == "Плюшки":
