@@ -3,16 +3,14 @@ from aiogram.utils.markdown import hlink
 #hello_url = hlink("Привет, я твой личный помошник", "https://youtu.be/dQw4w9WgXcQ")
 
 # Страничка новичка 
-an_url = hlink("ссылка на битрикс - страницу по направлению")
-newpie_utl = hlink("ссылка на битрикс - страницу по направлению")
-
-
-newjkx_url = hlink("Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
 dev_url = hlink("Страничка новичка - разработчика БАРС Груп",
                 "https://conf.bars.group/pages/viewpage.action?pageId=183236087")
+an_url = hlink("ссылка на битрикс - страницу по направлению")
+newpie_utl = hlink("ссылка на битрикс - страницу по направлению")
+newjkx_url = hlink("Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
+
 templates_url = hlink("ссылке", "https://conf.bars.group/pages/viewpage.action?pageId=56479927")
 references_url = hlink("ссылке", "https://jira.bars.group/servicedesk/customer/portal/13/group/101")
-
 
 # vacation etc.
 sickleave_url = hlink("больничный",
