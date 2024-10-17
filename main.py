@@ -34,7 +34,7 @@ conn.commit()
 @bot.message_handler(commands=['start'])
 def start(message):
     reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    btn1 = "1Страница новичка🧑‍💻"
+    btn1 = "Страница новичка🧑‍💻"
     btn2 = "Документы"
     btn3 = "Отпуск/Больничный/Отгул"
     btn4 = "Плюшки"
