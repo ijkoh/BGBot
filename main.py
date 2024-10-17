@@ -214,7 +214,7 @@ def main(message):
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Для разработчика"
         btn2 = "Для аналитика"
-        btn3 = "1Страничка новичка БАРС Груп"
+        btn3 = "Страничка новичка БАРС Груп"
         btn4 = "Страничка новичка БЦ ЖКХ,СЗ и СТРК"
         btn5 = "Вернуться в главное меню ↩"
         reply_markup.add(btn1, btn2, btn3, btn4, btn5)
