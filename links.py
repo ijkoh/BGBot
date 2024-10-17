@@ -11,7 +11,7 @@ newpie_utl = hlink("Ссылка на битрикс - страницу по н�
 
 ## Документы
 templates_url = hlink("ссылке", "https://bx.crg.im/stream/")
-references_url = hlink("ссылке запроса на почту в бухгалтерию", "https://bx.crg.im/stream/")
+references_url = hlink("ссылке", "https://bx.crg.im/stream/")
 
 
 ## vacation etc.
