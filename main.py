@@ -222,8 +222,8 @@ def main(message):
                          "Здесь собрана вся информация, которая будет полезна для новичка.\nЕсли останутся вопросы, "
                          "можешь обратиться к наставнику/рукводителю/HR",
                          reply_markup=reply_markup, timeout=60)
-    if message.text == "Страничка новичка":
-        bot.send_message(message.chat.id, f"{dev_url}", parse_mode="HTML", timeout=60)
+#    if message.text == "Страничка новичка":
+#        bot.send_message(message.chat.id, f"{dev_url}", parse_mode="HTML", timeout=60)
     if message.text == "Страничка нового аналитика":
         bot.send_message(message.chat.id, f"{an_url}", parse_mode='HTML', timeout=60)
     if message.text == "Страничка нового разработчика":
