@@ -36,9 +36,9 @@ def start(message):
     reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn1 = "Страница новичка🧑‍💻"
     btn2 = "Документы"
-    # btn3 = "Отпуск/Больничный/Отгул"
-    # btn4 = "Плюшки"
-    # btn5 = "Службы"
+    btn3 = "Отпуск/Больничный/Отгул"
+    btn4 = "Плюшки"
+    btn5 = "Службы"
     btn6 = "Идеи"
     reply_markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
     bot.send_message(message.chat.id,
