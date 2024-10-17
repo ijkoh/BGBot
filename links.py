@@ -9,7 +9,8 @@ newpie_utl = hlink("Ссылка на битрикс - страницу по н�
 #                "https://conf.bars.group/pages/viewpage.action?pageId=183236087")
 # newjkx_url = hlink("Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
 
-# templates_url = hlink("ссылке", "https://conf.bars.group/pages/viewpage.action?pageId=56479927")
+## Документы
+templates_url = hlink("ссылке", "https://bx.crg.im/stream/")
 # references_url = hlink("ссылке", "https://jira.bars.group/servicedesk/customer/portal/13/group/101")
 
 
