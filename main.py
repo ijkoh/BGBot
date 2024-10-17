@@ -152,7 +152,25 @@ def main(message):
         btn6 = "Идеи"
         reply_markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
         bot.send_message(message.chat.id, text="Что Вы хотите узнать?", reply_markup=reply_markup, timeout=60)
-       
+
+
+   if message.text == "Страница новичка🧑‍💻":
+        reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = "Страничка новичка"
+        btn2 = "Страничка нового аналитика"
+        btn3 = "Страничка нового разработчика"
+        btn4 = "Вернуться в главное меню ↩"
+        reply_markup.add(btn1, btn2, btn3, btn4)
+        bot.send_message(message.chat.id,
+                         "Здесь собрана вся информация, которая будет полезна для новичка.\nЕсли останутся вопросы, "
+                         "можешь обратиться к наставнику/рукводителю/HR",
+                         reply_markup=reply_markup, timeout=60)
+    if message.text == "Страничка нового аналитика":
+        bot.send_message(message.chat.id, f"{an_url}", parse_mode='HTML', timeout=60)
+    if message.text == "Страничка нового разработчика":
+        bot.send_message(message.chat.id, f"{newpie_utl}", parse_mode='HTML', timeout=60)
+
+
     if message.text == "Документы":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Шаблоны"
@@ -170,23 +188,27 @@ def main(message):
                          f"Что можно заказать по этой {references_url}: 2-НДФЛ, копия трудовой книжи/договора, вопрос по отпуску, запрос для военкомата. Обращения обрабатываются в течение 3х рабочих дней после оформления заявки",
                          parse_mode="HTML", timeout=60)
 
-    if message.text == "Страница новичка🧑‍💻":
+    if message.text == "Отпуск/Больничный/Отгул":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = "Страничка новичка"
-        btn2 = "Страничка нового аналитика"
-        btn3 = "Страничка нового разработчика"
+        btn1 = "Отпуск 🏖"
+        btn2 = "Больничный"
+        btn3 = "Отгул"
         btn4 = "Вернуться в главное меню ↩"
         reply_markup.add(btn1, btn2, btn3, btn4)
-        bot.send_message(message.chat.id,
-                         "Здесь собрана вся информация, которая будет полезна для новичка.\nЕсли останутся вопросы, "
-                         "можешь обратиться к наставнику/рукводителю/HR",
+        bot.send_message(message.chat.id, "Оформи отпуск/больничный/отгул правильно, чтоб тебя не беспокоили в эти дни",
                          reply_markup=reply_markup, timeout=60)
-    if message.text == "Страничка нового аналитика":
-        bot.send_message(message.chat.id, f"{an_url}", parse_mode='HTML', timeout=60)
-    if message.text == "Страничка нового разработчика":
-        bot.send_message(message.chat.id, f"{newpie_utl}", parse_mode='HTML', timeout=60)
+    if message.text == "Отпуск 🏖":
+        logging.info('Hello niggas')
+        bot.send_message(message.chat.id,
+                         f'Уйти в {vacation_url} так, чтоб тебя потом  "не дергали" с оформленем документов - это талант) И мы тебя этому научим',
+                         parse_mode='HTML', timeout=60)
+    if message.text == "Больничный":
+        bot.send_message(message.chat.id, f"Если есть необходимость взять больничный, то загляни {sickleave_url}",
+                         parse_mode='HTML', timeout=60)
+    if message.text == "Отгул":
+        bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям", timeout=60)
 
-   
+
     if message.text == "Плюшки":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "ДМС"
@@ -209,6 +231,8 @@ def main(message):
         bot.send_message(message.chat.id,
                          f"Большая коллекция профессиональной литературы в одном {biblio_url}.Если не нашел нужную тебе книгу-напиши @pashkooova_sasha.",
                          parse_mode="HTML", timeout=60)
+
+
     if message.text == "Службы":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Бухгалтерия"
