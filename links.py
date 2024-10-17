@@ -32,3 +32,5 @@ techsupport_url = hlink("Техническая поддержка", "https://ji
 accounting_url = hlink("бухгалетрию", "https://jira.bars.group/servicedesk/customer/portal/13/group/103")
 
 ideas_url = hlink("сюда", "https://t.me/Suggest_an_idea")
+
+1
