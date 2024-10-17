@@ -1,6 +1,6 @@
 from aiogram.utils.markdown import hlink
 
-hello_url = hlink("Привет, я твой личный помошник", "https://youtu.be/dQw4w9WgXcQ")
+hello_url = hlink("1Привет, я твой личный помошник", "https://youtu.be/dQw4w9WgXcQ")
 
 # newpcomers
 dev_url = hlink("Страничка новичка - разработчика БАРС Груп",
@@ -33,4 +33,3 @@ accounting_url = hlink("бухгалетрию", "https://jira.bars.group/servic
 
 ideas_url = hlink("сюда", "https://t.me/Suggest_an_idea")
 
-1
