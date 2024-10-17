@@ -155,14 +155,14 @@ def main(message):
     if message.text == "Документы":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Шаблоны"
-        btn2 = "Расчетный лист"
-        btn3 = "Справки"
-        btn4 = "Вернуться в главное меню ↩"
-        reply_markup.add(btn1, btn2, btn3, btn4)
+#        btn2 = "Расчетный лист"
+        btn2 = "Справки"
+        btn3 = "Вернуться в главное меню ↩"
+        reply_markup.add(btn1, btn2, btn3)
         bot.send_message(message.chat.id, "Здесь собраны самые актуальные документы, которые тебе могут понадобиться",
                          reply_markup=reply_markup, timeout=60)
-    if message.text == "Расчетный лист":
-        bot.send_message(message.chat.id, '''
+#    if message.text == "Расчетный лист":
+#        bot.send_message(message.chat.id, '''
         "Получение расчетного листа доступно через telegram-бота БАРС Груп:
 
 1️⃣ Перейти на @barsofficebot 
@@ -191,25 +191,26 @@ def main(message):
         bot.send_message(message.chat.id,
                          f"Что можно заказать по этой {references_url}: 2-НДФЛ, копия трудовой книжи/договора, вопрос по отпуску, запрос для военкомата. Обращения обрабатываются в течение 3х рабочих дней после оформления заявки",
                          parse_mode="HTML", timeout=60)
-    if message.text == "Отпуск/Больничный/Отгул":
-        reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = "Отпуск 🏖"
-        btn2 = "Больничный"
-        btn3 = "Отгул"
-        btn4 = "Вернуться в главное меню ↩"
-        reply_markup.add(btn1, btn2, btn3, btn4)
-        bot.send_message(message.chat.id, "Оформи отпуск/больничный/отгул правильно, чтоб тебя не беспокоили в эти дни",
-                         reply_markup=reply_markup, timeout=60)
-    if message.text == "Отпуск 🏖":
-        logging.info('Hello niggas')
-        bot.send_message(message.chat.id,
-                         f'Уйти в {vacation_url} так, чтоб тебя потом  "не дергали" с оформленем документов - это талант) И мы тебя этому научим',
-                         parse_mode='HTML', timeout=60)
-    if message.text == "Больничный":
-        bot.send_message(message.chat.id, f"Если есть необходимость взять {sickleave_url}, то загляни сюда",
-                         parse_mode='HTML', timeout=60)
-    if message.text == "Отгул":
-        bot.send_message(message.chat.id, f"Пока что тут пусто...", timeout=60)
+
+   # if message.text == "Отпуск/Больничный/Отгул":
+   #     reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+   #     btn1 = "Отпуск 🏖"
+   #     btn2 = "Больничный"
+   #     btn3 = "Отгул"
+   #     btn4 = "Вернуться в главное меню ↩"
+   #     reply_markup.add(btn1, btn2, btn3, btn4)
+   #     bot.send_message(message.chat.id, "Оформи отпуск/больничный/отгул правильно, чтоб тебя не беспокоили в эти дни",
+   #                      reply_markup=reply_markup, timeout=60)
+   # if message.text == "Отпуск 🏖":
+   #     logging.info('Hello niggas')
+   #     bot.send_message(message.chat.id,
+   #                      f'Уйти в {vacation_url} так, чтоб тебя потом  "не дергали" с оформленем документов - это талант) И мы тебя этому научим',
+   #                      parse_mode='HTML', timeout=60)
+   # if message.text == "Больничный":
+   #     bot.send_message(message.chat.id, f"Если есть необходимость взять {sickleave_url}, то загляни сюда",
+   #                      parse_mode='HTML', timeout=60)
+   # if message.text == "Отгул":
+   #     bot.send_message(message.chat.id, f"Пока что тут пусто...", timeout=60)
 
     if message.text == "Страница новичка🧑‍💻":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
