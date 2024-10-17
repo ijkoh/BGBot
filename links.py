@@ -33,3 +33,4 @@ accounting_url = hlink("бухгалетрию", "https://jira.bars.group/servic
 
 ideas_url = hlink("сюда", "https://t.me/Suggest_an_idea")
 
+q
