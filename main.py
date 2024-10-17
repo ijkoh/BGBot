@@ -197,7 +197,7 @@ def main(message):
         reply_markup.add(btn1, btn2, btn3, btn4)
         bot.send_message(message.chat.id, "Оформи отпуск/больничный/отгул правильно, чтоб тебя не беспокоили в эти дни",
                          reply_markup=reply_markup, timeout=60)
-    if message.text == "Отпуск 🏖":sh
+    if message.text == "Отпуск 🏖":
         bot.send_message(message.chat.id,
                          f'Уйти в {vacation_url} так, чтоб тебя потом  "не дергали" с оформленем документов - это талант) И мы тебя этому научим',
                          parse_mode='HTML', timeout=60)
