@@ -24,8 +24,8 @@ partner_url = hlink("тут", "https://bx.crg.im/stream/")
 biblio_url = hlink("месте", "https://bx.crg.im/stream/")
 
 ## Службы
-propusk_url = hlink("тут", "https://jira.bars.group/servicedesk/customer/portal/8/group/49")
-tovar_url = hlink("тут", "https://jira.bars.group/servicedesk/customer/portal/8/group/49")
+propusk_url = hlink("тут", "https://bx.crg.im/stream/")
+tovar_url = hlink("ссылка", "https://bx.crg.im/stream/")
 
 
 ideas_url = hlink("сюда", "https://t.me/Suggest_an_idea")
