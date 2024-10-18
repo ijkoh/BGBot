@@ -7,7 +7,6 @@ an_url = hlink("Ссылка на битрикс - страницу по нап�
 newpie_utl = hlink("Ссылка на битрикс - страницу по направлению", "https://bx.crg.im/stream/")
 dev_url = hlink("Страничка новичка - разработчика БАРС Груп",
                 "https://conf.bars.group/pages/viewpage.action?pageId=183236087")
-newjkx_url = hlink("Страничка новичка БЦ ЖКХ,СЗ и СТРК","https://conf.bars.group/pages/viewpage.action?pageId=183236064")
 
 ## Документы
 templates_url = hlink("ссылке", "https://bx.crg.im/stream/")
@@ -15,20 +14,14 @@ references_url = hlink("ссылке", "https://bx.crg.im/stream/")
 
 
 ## Отпуск/Больничный/Отгул
-# sickleave_url = hlink("больничный",
-#                      "https://conf.bars.group/pages/viewpage.action?pageId=183237343&preview=/183237343/230693376/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B9.docx")
-# vacation_url = hlink("отпуск",
-#                     "https://conf.bars.group/pages/viewpage.action?pageId=183237343&preview=/183237343/213452260/%D0%A1%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BE%D1%82%D0%BF%D1%83%D1%81%D0%BA%D0%B0.docx")
-
 sickleave_url = hlink("больничный", "https://bx.crg.im/stream/")
 vacation_url = hlink("отпуск", "https://bx.crg.im/stream/")
 otgyl_url = hlink("Ссылка", "https://bx.crg.im/stream/")
 
-# bonus
-dms_url = hlink("ссылке", "https://conf.bars.group/pages/viewpage.action?pageId=167862245")
-referalprogram_url = hlink("тут", "https://conf.bars.group/pages/viewpage.action?pageId=167851490")
-code_url = hlink("скидок", "https://t.me/barskodbarsgroup")
-biblio_url = hlink("месте", "https://t.me/barsbiblioteka")
+## Плюшки
+referalprogram_url = hlink("тут", "https://bx.crg.im/stream/")
+partner_url = hlink("тут", "https://bx.crg.im/stream/")
+biblio_url = hlink("месте", "https://bx.crg.im/stream/")
 
 # services
 pass_url = hlink("тут", "https://jira.bars.group/servicedesk/customer/portal/8/group/49")
