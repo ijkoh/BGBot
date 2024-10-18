@@ -202,9 +202,8 @@ def main(message):
         bot.send_message(message.chat.id, f"Если есть необходимость взять {sickleave_url}, то загляни сюда",
                          parse_mode='HTML', timeout=60)
     if message.text == "Отгул":
-        bot.send_message(message.chat.id, f"Пока что тут пусто...", timeout=60)
-
-
+        bot.send_message(message.chat.id, f"{otgyl_url} на битрикс - страницу с инструкцией по действиям (если есть переработки за отгул, если есть договоренности, если…. Если нет договоренностей, то отправка на инструкцию и описание отпуска без сохранения з/п)",
+                         parse_mode='HTML', timeout=60)
     
    
     if message.text == "Плюшки":
