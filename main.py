@@ -208,26 +208,36 @@ def main(message):
    
     if message.text == "Плюшки":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = "ДМС"
-        btn2 = "Реферальная программа"
-        btn3 = "БАРС-КОД"
-        btn4 = "Библиотека"
-        btn5 = "Вернуться в главное меню ↩"
-        reply_markup.add(btn1, btn2, btn3, btn4, btn5)
+        btn1 = "Реферальная программа"
+        btn2 = "Партнерские скидки"
+        btn3 = "Библиотека"
+        btn4 = "Шоко-бот"
+        btn5 = "Мерч"
+        btn6 = "Вернуться в главное меню ↩"
+        reply_markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
         bot.send_message(message.chat.id, "Выберите:", reply_markup=reply_markup, timeout=60)
-    if message.text == "ДМС":
-        bot.send_message(message.chat.id, f"По этой {dms_url} ты можешь найти положение о ДМС. Там прописаны все условия получения ДМС", parse_mode="HTML", timeout=60)
     if message.text == "Реферальная программа":
         bot.send_message(message.chat.id,
                          f"Классно работать с друзьями бок о бок! Ты можешь пригласить их к нам и получить за это выплату. Все условия {referalprogram_url}",
                          parse_mode="HTML", timeout=60)
-    if message.text == "БАРС-КОД":
-        bot.send_message(message.chat.id, f"Уникальная система {code_url} для сотрудников 'БАРС Груп'",
+    if message.text == "Партнерские скидки":
+        bot.send_message(message.chat.id,
+                         f"Уникальная система скидок от партнеров. Все условия {partner_url}",
                          parse_mode="HTML", timeout=60)
     if message.text == "Библиотека":
         bot.send_message(message.chat.id,
-                         f"Большая коллекция профессиональной литературы в одном {biblio_url}.Если не нашел нужную тебе книгу-напиши @pashkooova_sasha.",
+                         f"Большая коллекция профессиональной литературы в одном {biblio_url}.",
                          parse_mode="HTML", timeout=60)
+    if message.text == "Шоко-бот":
+        bot.send_message(message.chat.id,
+                         f"Инструкция к нашему холодильнику и вкусностям в нём. По всем вопросам связанных с Шокоботом, обращаться к Саше Широкову @ShirokovAE",
+                         parse_mode="HTML", timeout=60)
+    if message.text == "Мерч":
+        bot.send_message(message.chat.id,
+                         f"Ещё не придумали...",
+                         parse_mode="HTML", timeout=60)
+
+   
     if message.text == "Службы":
         reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = "Бухгалтерия"
