@@ -23,12 +23,10 @@ referalprogram_url = hlink("тут", "https://bx.crg.im/stream/")
 partner_url = hlink("тут", "https://bx.crg.im/stream/")
 biblio_url = hlink("месте", "https://bx.crg.im/stream/")
 
-# services
-pass_url = hlink("тут", "https://jira.bars.group/servicedesk/customer/portal/8/group/49")
-corporateUn_url = hlink("здесь", "https://conf.bars.group/display/UCT")
-personnel_url = hlink("Отдел Кадров", "https://jira.bars.group/servicedesk/customer/portal/13/group/101")
-techsupport_url = hlink("Техническая поддержка", "https://jira.bars.group/servicedesk/customer/portal/11")
-accounting_url = hlink("бухгалетрию", "https://jira.bars.group/servicedesk/customer/portal/13/group/103")
+## Службы
+propusk_url = hlink("тут", "https://jira.bars.group/servicedesk/customer/portal/8/group/49")
+tovar_url = hlink("тут", "https://jira.bars.group/servicedesk/customer/portal/8/group/49")
+
 
 ideas_url = hlink("сюда", "https://t.me/Suggest_an_idea")
 
