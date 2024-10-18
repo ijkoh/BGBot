@@ -268,9 +268,9 @@ def main(message):
                          parse_mode="HTML", timeout=60)
     if message.text == "Идеи":
         bot.send_message(message.chat.id,
-                         f"Если у тебя  есть идеи, пиши {ideas_url}.Мы обязательно рассмотрим твою идею, а ты получишь классный мерч БЦ",
+                         f"Если у тебя  есть идеи, пиши {ideas_url}.Мы обязательно рассмотрим твою идею, а ты получишь классный мерч!",
                          parse_mode="HTML", timeout=60)
-
+       
 
 def func1():
     while True:
