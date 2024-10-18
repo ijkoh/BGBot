@@ -27,6 +27,6 @@ biblio_url = hlink("месте", "https://bx.crg.im/stream/")
 propusk_url = hlink("тут", "https://bx.crg.im/stream/")
 tovar_url = hlink("ссылка", "https://bx.crg.im/stream/")
 
-
-ideas_url = hlink("сюда", "https://t.me/Suggest_an_idea")
+## Идеи
+ideas_url = hlink("сюда", "https://t.me/Karina_KFR")
 
