@@ -250,7 +250,7 @@ def main(message):
         reply_markup.add(btn1, btn2, btn3, btn4, btn5)
         bot.send_message(message.chat.id, "Выберите:",
                          reply_markup=reply_markup, timeout=60)
-    if message.text == "Бухгалтерия":
+    if message.text == "Бухгалтерия и кадры":
         bot.send_message(message.chat.id,
                          f"Тебе нужно заказать справку 2-НДФЛ или есть вопросы по начислению ЗП, узнать, сколько дней отпуска, нужен пакет документов для военкомата, или справка с места работы, кроме того, если у тебя изменились данные личных документов, то со всеми этими вопросами поможет разобраться Бухгалтерия. Наталья @Natalya_0604",
                          parse_mode="HTML", timeout=60)
@@ -264,7 +264,7 @@ def main(message):
                          parse_mode="HTML", timeout=60)
     if message.text == "Канц.товары и техника":
         bot.send_message(message.chat.id,
-                         f"Необходима канцелярия, техника или мебель: обратись к {tovar_url}",
+                         f"Необходима канцелярия, техника или мебель: обратись к {tovar_url} или @",
                          parse_mode="HTML", timeout=60)
     if message.text == "Идеи":
         bot.send_message(message.chat.id,
